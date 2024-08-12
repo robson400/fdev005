@@ -1,0 +1,26 @@
+# Diretórios
+node_modules/
+dist/
+build/
+coverage/
+
+# Arquivos de configuração local
+.env
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Compilados
+*.out
+*.swp
+*.swo
+
+# Editor de código
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

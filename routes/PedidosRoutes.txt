@@ -1,0 +1,27 @@
+import e from "express";
+
+const pedidosRoutes = e.Router();
+
+pedidosRoutes.get('/pedidos', (req, res)=> {
+    res.send("Lista de Pedidos.");
+})
+
+pedidosRoutes.get('/pedidos/:id', (req, res)=> {
+    res.send("Lista de um Pedido.");
+})
+
+pedidosRoutes.post('/pedidos/', (req, res)=> {
+    res.send("Inserir um Pedido.");
+})
+
+pedidosRoutes.put('/pedidos/:id', (req, res)=> {
+    const { id } = req.params;
+    res.send("Atualizar um pedido");
+})
+
+pedidosRoutes.delete('/pedidos/:id', (req, res)=> {
+    const { id } = req.params;
+    res.send("Deletar um pedido");
+})
+
+export default pedidosRoutes;
